@@ -17,7 +17,9 @@ def find_max_value(array)
     else
       max_value = array[counter+1]
     end
-    p max_value
+    counter += 1
+  end
+  p max_value
 end
 
 def find_min_value(array)
