@@ -1,9 +1,10 @@
 def find_element_index(array, value_to_find)
   counter = 0
-  while  array.include?(value_to_find){|counter|
+  while counter > array.length
+    if array.include?(value_to_find)
     p counter
-    #counter += 1
-  }
+    counter += 1
+  end
 end
 
 def find_max_value(array)
